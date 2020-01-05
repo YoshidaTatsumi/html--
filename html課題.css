@@ -39,25 +39,44 @@ main {
 
 .image1 {
 	height: 150px;
-	background-image: url(chapter9_exercise/img/flow01.png);
+	background-image: url(img/flow01.png);
 	background-size: cover;
 	background-position: bottom;
 }
 
 .image2 {
 	height: 150px;
-	background-image: url(chapter9_exercise/img/flow02.png);
+	background-image: url(img/flow02.png);
 	background-size: cover;
 	background-position: bottom;
 }
 
 .image3 {
 	height: 150px;
-	background-image: url(chapter9_exercise/img/flow03.png);
+	background-image: url(img/flow03.png);
 	background-size: cover;
 	background-position: bottom;
 }
 
 .blog-title {
 	margin: 15px 0 5px;
+}
+
+@media screen and (max-width:768px) {
+	main {
+		width: 100%;
+	}
+
+	.blog-item {
+		width: 90%;
+		float: none;
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.blog-item:last-child {
+		margin-bottom: 0;
+		margin-right: auto;
+	}
 }
